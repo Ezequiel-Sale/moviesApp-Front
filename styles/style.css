@@ -1,0 +1,210 @@
+@font-face {
+  font-family: MiFuente;
+  src: url("../assets/fonts/28\ Days\ Later.ttf") format("truetype");
+}
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../assets/img/cine.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.navBar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background: rgb(255, 214, 2);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 214, 2, 1) 13%,
+    rgba(255, 85, 38, 1) 99%
+  );
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.navBar span {
+  margin-left: 20px;
+}
+
+.navBar ul {
+  display: flex;
+  margin-right: 20px;
+  gap: 15px;
+}
+
+.navBar ul li:hover {
+  color: black;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.peliDestacada {
+  width: 90vw;
+  height: 400px;
+  background: rgba(86, 86, 86, 0.507);
+  margin: auto;
+  backdrop-filter: blur(80px);
+  border-radius: 15px;
+  margin-top: 70px;
+}
+.peliDes {
+  display: flex;
+}
+
+.imgDes {
+  width: 250px;
+  height: auto;
+  margin: 15px;
+}
+.titulo-des {
+  display: flex;
+  flex-direction: column;
+}
+.tituloDes {
+  font-family: "MiFuente", sans-serif;
+  font-weight: 500;
+  font-size: 4em;
+  color: black;
+  padding-left: 10px;
+  margin-top: -40px;
+}
+
+.tituloContainer {
+  margin-top: 60px;
+  z-index: 1;
+  color: #fff;
+}
+
+.descripcionDes {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8em;
+  padding:0 40px 0 10px;
+}
+
+#miVideo {
+  position: absolute;
+  top: 0;
+  width: 850px;
+  height: 400px;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.peli-card {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  border-radius: 15px;
+  backdrop-filter: blur(100px);
+  opacity: 1;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  transition: 0.6s ease-in;
+}
+
+.peli-card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  right: -25px;
+  background: #7952b3;
+  height: 100%;
+  width: 25px;
+  border-radius: 15px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+
+.peli-card:hover::before {
+  transition-delay: 0.2s;
+  transform: scale(40);
+}
+
+.peli-card:hover {
+  color: #fff;
+}
+.year-movie:hover::before {
+  color: #fff;
+}
+
+#contenedorCards {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: 90vw;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.poster-movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.poster-place {
+  margin-top: auto;
+}
+
+.title-movie {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+#contenedorCards {
+  font-size: 0.7em;
+  font-weight: 500;
+  color: #000000;
+  word-wrap: break-word;
+}
+
+#contenedorCards p::before {
+  font-size: 0.6em;
+  font-weight: 500;
+  color: #fff;
+  word-wrap: break-word;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 20px;
+  background: rgba(255, 0, 0, 0.433);
+}

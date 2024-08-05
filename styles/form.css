@@ -1,0 +1,48 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: auto;
+    margin: 62px auto 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(100px);
+    opacity: 1;
+  }
+  .formulario form div{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    color: #fff;
+  }
+  
+  .formulario form div input{
+    height: 25px;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+  .formulario form div label{
+    margin-left: 5px;
+  }
+  .formulario div button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  
+  .botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 0;
+    gap: 10px;
+  }
+  
+  #btnEnviar{
+    background: blue;
+    color: #fff;
+  }
+  
+  #btnLimpiar{
+    background: red;
+    color: #fff;
+  }

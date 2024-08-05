@@ -1,0 +1,56 @@
+/* Reset CSS */
+
+/* Box sizing reset */
+html {
+    box-sizing: border-box;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  /* Margin and padding reset */
+  body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, figure, blockquote, fieldset, legend {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Typography reset */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Lists reset */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Links reset */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Form elements reset */
+  button, input, select, textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: inherit;
+  }
+  
+  /* Images reset */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Miscellaneous reset */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
