@@ -7,7 +7,6 @@ const duration = document.getElementById("duration");
 const genre = document.getElementById("genre");
 const rate = document.getElementById("rate");
 const poster = document.getElementById("poster");
-const URI = process.env.URI
 
 const axiosPostData = async (e) => {
   try {
@@ -62,7 +61,7 @@ const axiosPostData = async (e) => {
       return;
     }
 
-    const movieCreate = await axios.post(`${URI}/movies`, movie);
+    const movieCreate = await axios.post(`https://moviesapp-back.onrender.com/movies`, movie);
     alert("Pelicula creada correctamente!");
     return movieCreate;
   } catch (error) {
